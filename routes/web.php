@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,6 @@ Route::get('/', function () {
 
 
 Route::view('/index', 'layaout.master');
+// Route::view('/productos', 'products.Productos');
+// Productos
+Route::resource('/productos', ProductoController::class);
